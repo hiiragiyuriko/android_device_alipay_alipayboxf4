@@ -9,8 +9,8 @@ $(call inherit-product, device/alipay/alipayboxf4/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := msm8953_64
-PRODUCT_NAME := lineage_msm8953_64
+PRODUCT_DEVICE := alipayboxf4
+PRODUCT_NAME := lineage_alipayboxf4
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AlipayBoxF4
 PRODUCT_MANUFACTURER := QUALCOMM
