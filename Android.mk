@@ -1,4 +1,10 @@
 #
+# Copyright (C) 2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+#
 # This contains the module build definitions for the hardware-specific
 # components for this device.
 #
