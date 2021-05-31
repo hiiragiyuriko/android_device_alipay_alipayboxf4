@@ -1430,8 +1430,6 @@ system/lib64/libdpmframework.so
 system/lib64/libdpmnsrm.so
 system/lib64/libdpmtcm.so
 -system/priv-app/dpmserviceapp/dpmserviceapp.apk
--system/priv-app/dpmserviceapp/oat/arm64/dpmserviceapp.odex
--system/priv-app/dpmserviceapp/oat/arm64/dpmserviceapp.vdex
 vendor/bin/dpmQmiMgr
 vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so
 vendor/lib/libdpmqmihal.so
@@ -1798,7 +1796,7 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 
 # Radio
-system/app/datastatusnotification/datastatusnotification.apk
+-system/app/datastatusnotification/datastatusnotification.apk
 -system/app/embms/embms.apk
 -system/app/QtiTelephonyService/QtiTelephonyService.apk
 system/etc/permissions/embms.xml
@@ -1878,12 +1876,8 @@ vendor/lib/lib-imscmservice.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib64/lib-imscmservice.so
-system/app/imssettings/imssettings.apk
-system/app/imssettings/oat/arm64/imssettings.odex
-system/app/imssettings/oat/arm64/imssettings.vdex
-system/app/uceShimService/uceShimService.apk
-system/app/uceShimService/oat/arm64/uceShimService.odex
-system/app/uceShimService/oat/arm64/uceShimService.vdex
+-system/app/imssettings/imssettings.apk
+-system/app/uceShimService/uceShimService.apk
 vendor/lib/lib-uceservice.so
 vendor/lib64/lib-uceservice.so
 system/lib/lib-imscamera.so
