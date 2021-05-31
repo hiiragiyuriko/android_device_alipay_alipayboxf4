@@ -26,7 +26,6 @@ vendor/lib/libfastcvopt.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
-vendor/lib/rfsa/adsp
 vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libfastcvadsp_stub.so
@@ -1927,12 +1926,6 @@ vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 -system/app/ims/ims.apk
--system/app/ims/lib/arm64
--system/app/ims/lib/arm64/libimscamera_jni.so
--system/app/ims/lib/arm64/libimsmedia_jni.so
--system/app/ims/oat/arm64
--system/app/ims/oat/arm64/ims.odex
--system/app/ims/oat/arm64/ims.vdex
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
