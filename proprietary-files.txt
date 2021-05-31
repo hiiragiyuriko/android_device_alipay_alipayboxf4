@@ -200,7 +200,6 @@ vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
 # Camera XML Configs 
-vendor/etc/camera/barcode.xml
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/config1.ini
 vendor/etc/camera/csidtg_camera.xml
