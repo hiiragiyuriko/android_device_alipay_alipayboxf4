@@ -32,7 +32,8 @@ BUILD_BROKEN_DUP_RULES := true
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_PREBUILT_KERNEL := $(VENDOR_PATH)/prebuild/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(VENDOR_PATH)/prebuilt/Image.gz-dtb
+TARGET_FORCE_PREBUILT_KERNEL := true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_BOOT_HEADER_VERSION := 0
 BOARD_KERNEL_BASE := 0x80000000
@@ -44,6 +45,20 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
+
+# Kernel Modules
+NEED_KERNEL_MODULE_SYSTEM := true
+KERNEL_MODULES_DIR := $(VENDOR_PATH)/prebuilt/modules
+
+ifneq ($(PRODUCT_TARGET_VNDK_VERSION),)
+KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules
+else
+KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_VENDOR)/lib/modules
+endif
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(KERNEL_MODULES_DIR),$(KERNEL_MODULES_COPY))
+
 
 # A/B
 AB_OTA_UPDATER := true
