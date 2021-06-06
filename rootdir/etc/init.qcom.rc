@@ -511,7 +511,7 @@ on property:persist.sys.ssr.enable_ramdumps=0
 
 #add by liguilong for mic property
 on property:sys.bus.i2c.drivers.es7210=*
-    write /sys/bus/i2c/drivers/es7210/2-0040/es7210_debug/es7210 $(sys.bus.i2c.drivers.es7210)
+    write /sys/bus/i2c/drivers/es7210/2-0040/es7210_debug/es7210 ${sys.bus.i2c.drivers.es7210}
 
 #add by liguilong for led property
 on property:sys.class.leds.blue.blink=true
