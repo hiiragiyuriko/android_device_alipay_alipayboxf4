@@ -1467,6 +1467,8 @@ vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.msm8953.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterdeviceutils.so
 
 # GPS
 vendor/bin/garden_app
@@ -1504,6 +1506,10 @@ vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
+vendor/lib/libloc_pla.so
+vendor/lib64/libloc_pla.so
+vendor/lib/libloc_stub.so
+vendor/lib64/libloc_stub.so
 
 # Graphics
 system/lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
@@ -1906,6 +1912,8 @@ vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/bin/ims_rtp_daemon
+vendor/lib/lib-rtpdaemoninterface.so
+vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib/lib-imscmservice.so
 vendor/lib/lib-imsdpl.so
 vendor/lib/lib-imsqimf.so
@@ -1963,6 +1971,8 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Wi-Fi
 vendor/bin/wcnss_service
+vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin
+vendor/etc/wifi/WCNSS_wlan_dictionary.dat
 
 # Wi-Fi Display 
 system/bin/wfdservice
@@ -2012,4 +2022,14 @@ vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
 
-
+# others
+vendor/lib/libsmemlog.so
+vendor/lib64/libsmemlog.so
+vendor/lib/libdisp-aba.so
+vendor/lib64/libdisp-aba.so
+vendor/lib/libdpmqmihal.so
+vendor/lib64/libdpmqmihal.so
+vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so
+system/lib/libgui.so:vendor/lib/libgui.so
+system/lib64/libgui.so:vendor/lib64/libgui.so
