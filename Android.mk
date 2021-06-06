@@ -102,20 +102,27 @@ $(RFS_MDM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MDM_ADSP_SYMLINKS) $(RFS_MDM_CDSP_SYMLINKS) $(RFS_MDM_MPSS_SYMLINKS) $(RFS_MDM_SLPI_SYMLINKS)
 
-WCNSS_INI_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/WCNSS_qcom_cfg.ini
+WCNSS_INI_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 $(WCNSS_INI_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "WCNSS config ini link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /vendor/etc/wifi/qca6390/$(notdir $@) $@
+	$(hide) ln -sf /data/misc/wifi/$(notdir $@) $@
 
-WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/qca6390/wlan_mac.bin
+WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "WCNSS MAC bin link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /mnt/vendor/persist/$(notdir $@) $@
+	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
+WCNSS_DICTIONARY_SIMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
+$(WCNSS_DICTIONARY_SIMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "WCNSS MAC bin link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK) $(WCNSS_DICTIONARY_SIMLINK)
 
 endif
