@@ -1564,8 +1564,8 @@ vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 
 # HWC
-vendor/lib/hwcomposer.msm8953.so
-vendor/lib64/hwcomposer.msm8953.so
+vendor/lib/hw/hwcomposer.msm8953.so
+vendor/lib64/hw/hwcomposer.msm8953.so
 
 # Graphics (SDM)
 vendor/lib/libsdm-color.so
