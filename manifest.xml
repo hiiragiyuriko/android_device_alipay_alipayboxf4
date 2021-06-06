@@ -258,7 +258,7 @@
     <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
-        <version>1.9</version>
+        <version>1.2</version>
         <interface>
             <name>IDisplayConfig</name>
             <instance>default</instance>
@@ -499,6 +499,15 @@
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBootControl</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <sepolicy>
