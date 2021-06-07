@@ -1475,6 +1475,8 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterdeviceutils.so
 
 # GPS
+system/lib/android.hardware.gnss@1.0.so
+system/lib64/android.hardware.gnss@1.0.so
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
