@@ -173,10 +173,9 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     vendor.qti.hardware.camera.device@1.0
 
-# Consumer IR
+# Consumerir
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    consumerir.default
 
 # HW crypto
 PRODUCT_PACKAGES += \
