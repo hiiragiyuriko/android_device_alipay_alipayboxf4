@@ -173,10 +173,13 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     vendor.qti.hardware.camera.device@1.0
 
+<<<<<<< HEAD
 # Consumerir
 PRODUCT_PACKAGES += \
     consumerir.default
 
+=======
+>>>>>>> parent of 2cb44bd (android.hardware.ir: fix build)
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
