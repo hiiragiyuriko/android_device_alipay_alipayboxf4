@@ -1869,6 +1869,8 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 vendor/lib/lib-dplmedia.so
 vendor/lib64/lib-dplmedia.so
+system/lib/libmedia.so:vendor/lib/lib-dplmedia.so
+system/lib64/libmedia.so:vendor/lib64/lib-dplmedia.so
 
 # Radio - IMS
 system/etc/permissions/com.qualcomm.qti.imscmservice.xml
