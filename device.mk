@@ -177,6 +177,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     consumerir.default
 
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
