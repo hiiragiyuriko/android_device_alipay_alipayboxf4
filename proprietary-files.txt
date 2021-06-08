@@ -1987,6 +1987,8 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/bin/wcnss_service
 vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin
 vendor/etc/wifi/WCNSS_wlan_dictionary.dat
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.1_vendor.so
 
 # Wi-Fi Display 
 system/bin/wfdservice
