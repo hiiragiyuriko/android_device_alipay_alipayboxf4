@@ -16,3 +16,12 @@ cc_library {
     ]
 }
 
+cc_library {
+    name: "libqmiservices_shim",
+    srcs: ["libqmiservices_shim.cpp"],
+    shared_libs: [
+        "libqmiservices",
+        "libbase"
+    ],
+    vendor: true
+}

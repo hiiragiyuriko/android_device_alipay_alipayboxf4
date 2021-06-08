@@ -446,7 +446,8 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
-    fence_shim
+    fence_shim \
+    libqmiservices_shim
 
 # Light
 PRODUCT_PACKAGES += \
