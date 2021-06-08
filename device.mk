@@ -28,10 +28,18 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@6.0 \
     android.hardware.audio@6.0-impl \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@2.0-service \
+    android.hardware.audio.effect@6.0 \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.service \
     android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.0-service \
     audio.a2dp.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
@@ -439,3 +447,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     fence_shim
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.msm8953
