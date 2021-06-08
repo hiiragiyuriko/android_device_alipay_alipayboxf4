@@ -13,7 +13,6 @@ cc_library {
         "libgui",
         "libui",
         "libutils",
-    ],
-    compile_multilib: "32",
+    ]
 }
 
