@@ -1,0 +1,19 @@
+cc_library {
+    name: "libbase_shim",
+    srcs: ["logging.cpp"],
+    shared_libs: ["libbase"],
+    vendor: true
+}
+
+cc_library {
+    name: "fence_shim",
+    srcs: ["fence.cpp"],
+    shared_libs: [
+        "libbinder",
+        "libgui",
+        "libui",
+        "libutils",
+    ],
+    compile_multilib: "32",
+}
+
