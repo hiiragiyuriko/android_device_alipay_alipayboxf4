@@ -165,8 +165,9 @@ service audiod /system/vendor/bin/audiod
    group system
 
 on boot
+    start wcnss-service
     start rmt_storage
-    insmod /system/lib/modules/adsprpc.ko
+    insmod /vendor/lib/modules/adsprpc.ko
 # access permission for secure touch
     chmod 0660 /sys/devices/soc.0/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch_enable
     chmod 0440 /sys/devices/soc.0/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch
@@ -204,6 +205,10 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
+
+    # Wifi firmware reload path
+    insmod /vendor/lib/modules/wlan.ko
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 service wcnss-service /system/vendor/bin/wcnss_service
     class main
