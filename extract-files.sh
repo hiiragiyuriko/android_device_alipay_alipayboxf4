@@ -55,8 +55,8 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
-        patchelf --add-needed "libbase_shim.so"
+    vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        patchelf --add-needed "libbase_shim.so" "${2}"
     ;;
     vendor/bin/wcnss_service)
         patchelf --add-needed "libqmiservices_shim.so" "${2}"
