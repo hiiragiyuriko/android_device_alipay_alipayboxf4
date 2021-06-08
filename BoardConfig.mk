@@ -155,9 +155,6 @@ TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(VENDOR_PATH)/compatibility_matrix.xml
 
-# Lights
-# TODO
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
@@ -212,3 +209,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Properties
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
