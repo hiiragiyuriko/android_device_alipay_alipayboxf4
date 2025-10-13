@@ -17,3 +17,4 @@ Display | 800x1280 pixels, 8"
 ## Device picture
 
 ![AlipayBoxF4](https://blog.hiirachan.moe/usr/uploads/2021/06/4212253722.png "AlipayBoxF4")
+![AlipayBoxF4_Rec](https://blog.hiirachan.moe/usr/uploads/2025/10/1993105262.jpg "AlipayBoxF4_Rec")
